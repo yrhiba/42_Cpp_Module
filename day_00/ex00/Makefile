@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/22 23:02:57 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/22 23:06:18 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/22 23:14:32 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = megaphone
 
 SRCS = megaphone.cpp
 
-OBJS = $(SRCS:.cpp:.o)
+OBJS = $(SRCS:.cpp=.o)
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -32,6 +32,6 @@ clean :
 fclean : clean
 	rm -rf $(NAME)
 
-re : fclean re
+re : fclean all
 
 .PHONY : all clean fclean re
