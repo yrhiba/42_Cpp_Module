@@ -48,21 +48,19 @@ void	PhoneBook::shearch()
 
 	std::cout << "Please enter an index that you are looking for:" << std::endl;
 
-	std::string line; std::getline(std::cin, line);
 
-	int	index;
-
-	try
-	{
-		index = stoi(line);
-	}
-	catch(const std::exception& e)
+	std::string line;
+	
+	if (!(std::getline(std::cin, line)))
 	{
 		std::cout << "Error, Invalid Index." << std::endl;
 		return ;
 	};
 
-	if (index <= 0 || index > this->contacts_count)
+	int index = line[0] - '0';
+
+	if (line.size() != 1 || !(std::isdigit(line[0]))
+		|| index <= 0 || index > this->contacts_count)
 	{
 		std::cout << "Invalid Index." << std::endl;
 		return ;
