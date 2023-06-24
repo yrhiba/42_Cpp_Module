@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 23:31:46 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/24 14:48:52 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/24 15:00:39 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,19 @@ void	PhoneBook::shearch()
 
 	std::cout << "Please enter an index that you are looking for:" << std::endl;
 
-	int	index; std::cin >> index;
+	std::string line; std::getline(std::cin, line);
+
+	int	index;
+
+	try
+	{
+		index = stoi(line);
+	}
+	catch(const std::exception& e)
+	{
+		std::cout << "Error, Invalid Index." << std::endl;
+		return ;
+	};
 
 	if (index <= 0 || index > this->contacts_count)
 	{
