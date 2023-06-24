@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 23:31:44 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/23 02:12:40 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/24 13:51:39 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ private:
 public:
 	PhoneBook();
 
-	bool	add();
+	void	add();
 
 	void	shearch();
 
