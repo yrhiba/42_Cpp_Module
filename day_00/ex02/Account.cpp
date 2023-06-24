@@ -6,12 +6,14 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/24 15:36:22 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/24 18:22:03 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/24 18:43:18 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Account.hpp"
 #include <iostream>
+#include <chrono>
+#include <ctime>
 
 int	Account::_nbAccounts = 0;
 int	Account::_totalAmount = 0;
@@ -120,7 +122,16 @@ void	Account::displayStatus( void ) const
 
 void	Account::_displayTimestamp()
 {
-	std::cout << "[19920104_091532] ";
+	std::chrono::system_clock::time_point currentTime = std::chrono::system_clock::now();
+
+	std::time_t time = std::chrono::system_clock::to_time_t(currentTime);
+
+	std::tm* date = std::localtime(&time);
+
+	std::cout << "[" << date->tm_year + 1900;
+	std::cout.fill('0');
+	std::cout.width(2);
+	std::cout << date->tm_mon + 1 << date->tm_mday << "_" << date->tm_hour << date->tm_min << date->tm_sec << "] ";
 }
 
 Account::~Account()
