@@ -6,26 +6,28 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/22 23:19:45 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/22 23:55:22 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/23 02:45:21 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = phonebook
 
-SRCS = main.cpp $(addprefix class/, Phonebook.cpp Contact.cpp)
+SRCS = main.cpp $(addprefix class/, PhoneBook.cpp Contact.cpp)
 
-INCS = $(addprefix incs/, Phonebook.hpp Contact.hpp header.hpp)
+INCS = $(addprefix incs/, PhoneBook.hpp Contact.hpp header.hpp)
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
-OBJS = $(addprefix objs/, $(SRCS:.cpp=.o))
+DOBJS = objs/
+
+OBJS = $(addprefix $(DOBJS), $(SRCS:.cpp=.o))
 
 $(NAME) : $(OBJS)
-	g++	$(FLAGS) $(OBJS) -o $(NAME)
+	g++ $(FLAGS) $(OBJS) -o $(NAME)
 
-objs/%.o : %.cpp $(INCS)
+$(DOBJS)%.o : %.cpp $(INCS)
 	@mkdir -p $(dir $@)
-	g++ $(FLAGS) -c $< -o $@
+	g++ $(FLAGS) -c $< -o $@ -I . -I incs
 
 all : $(NAME)
 
@@ -34,5 +36,7 @@ clean :
 
 fclean : clean
 	rm -rf $(NAME)
+
+re : fclean all
 
 .PHONY : all clean fclean re
