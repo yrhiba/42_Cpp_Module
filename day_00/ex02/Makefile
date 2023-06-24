@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/24 17:05:49 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/24 17:10:34 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/24 17:12:21 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,13 +18,13 @@ OBJS = $(SRCS:.cpp=.o)
 
 INC = Account.hpp
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -std=c++98
 
 $(NAME) : $(OBJS)
 	g++ $(FLAGS) $(OBJS) -o $(NAME)
 
 %.o : %.cpp $(INC)
-	g++ $(FLAGS) -c $< o $@
+	g++ $(FLAGS) -c $< -o $@
 
 all : $(NAME)
 
