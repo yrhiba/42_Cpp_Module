@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 23:31:46 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/24 13:59:33 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/24 14:48:52 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,18 @@ void	PhoneBook::add()
 void	PhoneBook::shearch()
 {
 	for (int i = 0; i < this->contacts_count; i++)
+		this->contacts[i].print_info(i + 1);
+
+	std::cout << "Please enter an index that you are looking for:" << std::endl;
+
+	int	index; std::cin >> index;
+
+	if (index <= 0 || index > this->contacts_count)
 	{
-		std::cout << i << " -> ";
-		this->contacts[i].print_info();
+		std::cout << "Invalid Index." << std::endl;
+		return ;
 	}
+	this->contacts[index-1].print_allinfo();
 }
 
 PhoneBook::~PhoneBook()
