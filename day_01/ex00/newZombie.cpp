@@ -1,34 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/25 01:43:31 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/25 01:55:11 by yrhiba           ###   ########.fr       */
+/*   Created: 2023/06/25 01:49:05 by yrhiba            #+#    #+#             */
+/*   Updated: 2023/06/25 01:59:59 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef __ZOMBIE__
-# define __ZOMBIE__
+#include "Zombie.hpp"
 
-#include <iostream>
-#include <string>
-
-class Zombie
+Zombie* newZombie( std::string name )
 {
-private:
-	Zombie();
-
-	std::string name;
-
-public:
-	Zombie(std::string);
-
-	void	annouce(void);
-
-	~Zombie();
-};
-
-#endif
+	return (new Zombie(name));
+}

@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/25 01:36:31 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/25 01:46:46 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/25 02:04:20 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ clean :
 	rm -rf objs
 
 fclean : clean
-	rm -rf objs
+	rm -rf $(NAME)
 
 re : fclean all
 
