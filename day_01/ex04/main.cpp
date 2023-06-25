@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 15:07:08 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/25 17:47:52 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/25 22:46:31 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ sed(std::string file, std::string s1, std::string s2)
 
 	std::string line; 
 
-	while (std::getline(infile, line))
+	while (std::getline(infile, line, '\0'))
 		oufile << replace(line, s1, s2) << std::endl;
 
 	infile.close();
