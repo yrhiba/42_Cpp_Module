@@ -7,7 +7,7 @@
 class	HumanA
 {
 	public	:
-		HumanA (Weapon &_weapon);
+		HumanA (std::string _name, Weapon &_weapon);
 		~HumanA ();
 		void	attack(void);
 

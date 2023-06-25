@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/25 07:02:09 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/25 07:06:15 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/25 07:07:54 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ NAME = weapon
 
 FLAGS = -Wall -Wextra -Werror
 
-CC = c++ 
+CC = c++
 
-STD = -std=c++98 
+STD = -std=c++98
 
 SRC = Weapon.cpp HumanA.cpp HumanB.cpp main.cpp 
 

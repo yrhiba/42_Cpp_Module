@@ -6,13 +6,13 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 05:56:14 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/25 05:57:05 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/25 07:20:28 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon()
+Weapon::Weapon(std::string _type) : type(_type)
 {
 	std::cout << "Weapon : Default Constructor Called" << std::endl;
 }
