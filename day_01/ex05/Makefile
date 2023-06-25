@@ -6,11 +6,13 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/25 17:49:08 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/25 17:56:45 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/25 18:00:38 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = main.cpp Harl.cpp
+NAME = harl
+
+SRCS = main.cpp Harl.cpp
 
 OBJS = $(addprefix objs/, $(SRCS:.cpp=.o))
 
@@ -25,7 +27,7 @@ $(NAME) : $(OBJS)
 
 objs/%.o : %.cpp $(INC)
 	@mkdir -p $(dir $@)
-	g++ $(FLAGS) -c $< -o $@
+	c++ $(FLAGS) -c $< -o $@
 
 all : $(NAME)
 
