@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 23:31:46 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/06/24 15:00:39 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/06/25 01:07:45 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,10 @@ void	PhoneBook::shearch()
 		return ;
 	};
 
-	int index = line[0] - '0';
+	int index = 0;
+
+	if (line.size() > 0)
+		index = line[0] - '0';
 
 	if (line.size() != 1 || !(std::isdigit(line[0]))
 		|| index <= 0 || index > this->contacts_count)
