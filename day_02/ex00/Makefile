@@ -1,0 +1,42 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/06/26 22:57:39 by yrhiba            #+#    #+#              #
+#    Updated: 2023/06/27 00:20:01 by yrhiba           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = fixed
+
+SRCS = main.cpp Fixed.cpp
+
+INC = Fixed.hpp
+
+FLAGS = -Wall -Wextra -Werror
+
+STD = -std=c++98
+
+OBJS = $(addprefix objs/, $(SRCS:.cpp=.o))
+
+$(NAME) : $(OBJS)
+	c++ $(FLAGS) $(STD) $(OBJS) -o $(NAME)
+
+objs/%.o : %.cpp $(INC)
+	@mkdir -p $(dir $@)
+	c++ $(FLAGS) $(STD) -c $< -o $@
+
+all : $(NAME)
+
+clean :
+	rm -rf objs
+
+fclean : clean
+	rm -rf $(NAME)
+
+re : fclean all
+
+.PHONY : all fclean clean re
