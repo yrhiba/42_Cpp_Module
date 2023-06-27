@@ -6,17 +6,17 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/26 22:57:39 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/27 00:20:01 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/06/27 08:31:59 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fixed
 
-SRCS = main.cpp Fixed.cpp
+SRCS = Fixed.cpp main.cpp
 
 INC = Fixed.hpp
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra #-Werror
 
 STD = -std=c++98
 
