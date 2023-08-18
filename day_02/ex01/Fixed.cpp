@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:22:04 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/18 06:27:34 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/18 06:41:58 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Fixed::Fixed(const int value) : integer(value << this->bits)
 	std::cout << "Int constructor called" << std::endl;
 }
 
-Fixed::Fixed(const float value) : integer(std::roundf(value * (1 << this->bits)))
+Fixed::Fixed(const float value) : integer(roundf(value * (1 << this->bits)))
 {
 	std::cout << "Float constructor called" << std::endl;
 }
