@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:21:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/21 05:49:35 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/21 06:36:40 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ using namespace std;
 
 int main( void )
 {
-	bsp(Point(1, 1), Point(5, 5), Point(1, 9), Point(3, 4));
-	return 0;
+	bsp(Point(-4, 0), Point(2, 5), Point(3, -2), Point(0, 0)) ?
+		std::cout << "YES" : std::cout << "NO";
+	std::cout << std::endl;
+	return (0);
 }
