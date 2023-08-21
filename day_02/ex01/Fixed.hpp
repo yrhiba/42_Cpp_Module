@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:22:24 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/18 06:43:20 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/21 01:19:43 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ public:
 
 	int toInt(void) const;
 
-	void operator=(const Fixed &x);
+	Fixed &operator=(const Fixed &x);
 
 	~Fixed();
 

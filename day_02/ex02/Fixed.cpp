@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:22:04 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/21 01:09:48 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/21 01:20:41 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,11 @@ Fixed::Fixed(const float value) : integer(roundf(value * (1 << this->bits)))
 	std::cout << "Float constructor called" << std::endl;
 }
 
-void Fixed::operator=(const Fixed &other)
+Fixed &Fixed::operator=(const Fixed &other)
 {
 	std::cout << "Copy assignment operator called" << std::endl;
 	this->integer = other.integer;
+	return (*this);
 }
 
 Fixed::~Fixed()
