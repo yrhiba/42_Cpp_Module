@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:21:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/21 00:12:04 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/21 01:07:03 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,9 @@ int main( void )
 
 
 	cout << a << "  " << b << endl;
-	cout << "+ " << a+b << endl;
-	cout << "- " << a-b << endl;
-	cout << "* " << a*b << endl;
-	cout << "/ " << a/b << endl;
 
+
+	cout << --a << endl;
+	cout << ++b << endl;
 	return 0;
 }
