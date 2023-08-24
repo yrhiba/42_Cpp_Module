@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/24 01:34:20 by yrhiba            #+#    #+#              #
-#    Updated: 2023/08/24 01:39:48 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/08/24 02:19:21 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ $(NAME) : $(OBJS)
 	g++ $(STD) $(FLAGS) $(OBJS) -o $(NAME)
 
 %.o : %.cpp $(INC)
-	g++ $(STD) $(FLAGS) -c $< -p $@
+	g++ $(STD) $(FLAGS) -c $< -o $@
 
 all : $(NAME)
 

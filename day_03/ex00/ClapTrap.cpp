@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 01:40:47 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/24 02:16:55 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/24 02:18:48 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 	this->hit_points = other.gethitpoints();
 	this->energy_points = other.getenergypoints();
 	this->attack_damage = other.getattackdamage();
+	return (*this);
 }
 
 void ClapTrap::attack(const std::string &target)
