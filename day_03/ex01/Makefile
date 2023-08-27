@@ -6,11 +6,11 @@
 #    By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/24 01:34:20 by yrhiba            #+#    #+#              #
-#    Updated: 2023/08/24 03:55:56 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/08/27 09:27:55 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = claptrap
+NAME = scavtrap
 
 SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 

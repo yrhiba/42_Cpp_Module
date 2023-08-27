@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 02:52:21 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/24 04:30:10 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/27 09:17:19 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@
 
 class ScavTrap : public ClapTrap
 {
-private:
-	
 public:
+	ScavTrap();
 	ScavTrap(std::string _name);
 	~ScavTrap();
 

@@ -6,18 +6,23 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 03:48:38 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/24 04:36:11 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/27 09:17:22 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
+ScavTrap::ScavTrap()
+{
+	std::cout << "Default ScavTrap constructer called" << std::endl;
+}
+
 ScavTrap::ScavTrap(std::string _name) : ClapTrap(_name)
 {
 	std::cout << "ScavTrap constructer called" << std::endl;
-	this->sethitpoints(100);
-	this->setenergypoints(50);
-	this->setattackdamage(20);
+	this->hit_points = 100;
+	this->energy_points = 50;
+	this->attack_damage = 20;
 }
 
 ScavTrap::~ScavTrap()
@@ -27,12 +32,12 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::attack(const std::string &target)
 {
-	if (this->gethitpoints() == 0)
+	if (this->hit_points == 0)
 	{
-		std::cout << "ScavTrap " << this->getname() << " Can't attack." << std::endl;
+		std::cout << "ScavTrap " << this->name << " Can't attack." << std::endl;
 		return ;
 	}
-	this->sethitpoints(this->gethitpoints() - 1);
+	this->hit_points -= 1;
 	std::cout << "ScavTrap " << this->getname() << " attack " << target;
 	std::cout << ", causing " << this->getattackdamage() << " points of damage!";
 	std::cout << std::endl;
@@ -51,9 +56,9 @@ ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 {
-	this->setname(other.getname());
-	this->sethitpoints(other.gethitpoints());
-	this->setenergypoints(other.getenergypoints());
-	this->setattackdamage(other.getattackdamage());
+	this->name = other.getname();
+	this->hit_points = other.gethitpoints();
+	this->energy_points = other.getenergypoints();
+	this->attack_damage = other.getattackdamage();
 	return (*this);
 }

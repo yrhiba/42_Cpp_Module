@@ -6,12 +6,18 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 01:40:47 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/24 04:27:59 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/27 09:11:13 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
+
+ClapTrap::ClapTrap()
+	: name("no_name"), hit_points(0), energy_points(0), attack_damage(0)
+{
+	std::cout << "Default ClapTrap constructer called." << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string _name)
 	: name(_name), hit_points(10), energy_points(10), attack_damage(0)
@@ -92,39 +98,4 @@ int 		ClapTrap::getenergypoints( void ) const
 int 		ClapTrap::getattackdamage( void ) const
 {
 	return (this->attack_damage);
-}
-
-void		ClapTrap::sethitpoints(int amount)
-{
-	if (amount < 0)
-	{
-		this->hit_points = 0;
-		return ;
-	}
-	this->hit_points = amount;
-}
-
-void		ClapTrap::setenergypoints(int amount)
-{
-	if (amount < 0)
-	{
-		this->energy_points = 0;
-		return ;
-	}
-	this->energy_points = amount;
-}
-
-void		ClapTrap::setattackdamage(int amount)
-{
-	if (amount < 0)
-	{
-		this->attack_damage = 0;
-		return ;
-	}
-	this->attack_damage = amount;
-}
-
-void		ClapTrap::setname(std::string _name)
-{
-	this->name = _name;
 }
