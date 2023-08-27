@@ -6,12 +6,18 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 01:40:47 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/24 02:18:48 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/27 09:06:25 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
+
+ClapTrap::ClapTrap()
+	: name("no_name"), hit_points(0), energy_points(0), attack_damage(0)
+{
+	std::cout << "Default Constructer called." << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string _name)
 	: name(_name), hit_points(10), energy_points(10), attack_damage(0)

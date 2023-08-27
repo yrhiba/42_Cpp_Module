@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 01:41:00 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/24 02:19:49 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/27 09:06:06 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ private:
 	int			attack_damage;
 
 public:
+	ClapTrap();
 	ClapTrap(std::string _name);
 	~ClapTrap();
 
