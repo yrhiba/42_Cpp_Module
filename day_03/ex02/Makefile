@@ -6,11 +6,11 @@
 #    By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/24 01:34:20 by yrhiba            #+#    #+#              #
-#    Updated: 2023/08/24 14:14:55 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/08/27 09:30:54 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = claptrap
+NAME = fragtrap
 
 SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
