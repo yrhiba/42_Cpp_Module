@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 13:21:55 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/28 13:40:20 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/28 14:36:11 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@
 
 /* relative includes */
 #include "Animal.hpp"
-
+#include "Dog.hpp"
+#include "Cat.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 
 #endif

@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 13:40:28 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/28 14:28:43 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/08/28 14:30:59 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef ANIMAL
-# define ANIMAL
+#ifndef WANIMAL
+# define WANIMAL
 
 #include "header.hpp"
 
 
-class Animal
+class WrongAnimal
 {
 protected:
 	std::string type;
 
 public:
-	Animal();
-	Animal(const Animal &other);
-	virtual ~Animal();
-	Animal &operator=(const Animal &other);
+	WrongAnimal();
+	WrongAnimal(const WrongAnimal &other);
+	virtual ~WrongAnimal();
+	WrongAnimal &operator=(const WrongAnimal &other);
 
-	virtual void makeSound( void ) const;
+	void makeSound( void ) const;
 	const std::string &getType( void ) const;
 };
 

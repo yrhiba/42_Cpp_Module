@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/28 13:40:28 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/28 14:28:43 by yrhiba           ###   ########.fr       */
+/*   Created: 2023/08/28 14:02:16 by yrhiba            #+#    #+#             */
+/*   Updated: 2023/08/28 14:33:45 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#ifndef ANIMAL
-# define ANIMAL
+#ifndef WCAT
+# define WCAT
 
 #include "header.hpp"
 
-
-class Animal
+class WrongCat : public WrongAnimal
 {
-protected:
-	std::string type;
-
 public:
-	Animal();
-	Animal(const Animal &other);
-	virtual ~Animal();
-	Animal &operator=(const Animal &other);
+	WrongCat();
+	WrongCat(const WrongCat &other);
+	~WrongCat();
+	WrongCat &operator=(const WrongCat &other);
 
-	virtual void makeSound( void ) const;
-	const std::string &getType( void ) const;
+	void makeSound( void ) const;
 };
 
 #endif

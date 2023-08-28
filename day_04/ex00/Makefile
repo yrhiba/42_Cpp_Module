@@ -6,15 +6,17 @@
 #    By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/28 13:20:40 by yrhiba            #+#    #+#              #
-#    Updated: 2023/08/28 13:56:47 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/08/28 14:35:36 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = ex00
 
-SRCS = main.cpp Animal.cpp
+SRCS =	main.cpp Animal.cpp Dog.cpp Cat.cpp \
+		WrongAnimal.cpp WrongCat.cpp
 
-INCS = header.hpp Animal.hpp
+INCS =	header.hpp Animal.hpp Dog.hpp Cat.hpp \
+		WrongAnimal.hpp WrongCat.hpp
 
 ODIR = objs/
 
