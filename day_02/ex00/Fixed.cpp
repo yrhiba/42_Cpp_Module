@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:22:04 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/18 05:12:10 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/05 18:04:14 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ Fixed::Fixed(const Fixed &other) : integer(other.integer)
 	std::cout << "Copy constructor called" << std::endl;
 }
 
-void Fixed::operator=(const Fixed &other)
+Fixed &Fixed::operator=(const Fixed &other)
 {
 	std::cout << "Copy assignment operator called" << std::endl;
 	this->integer = other.integer;
+	return (*this);
 }
 
 Fixed::~Fixed()

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:22:24 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/05 09:43:52 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/05 18:04:20 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
 
 	Fixed(const Fixed &other);
 
-	void operator=(const Fixed &x);
+	Fixed &operator=(const Fixed &x);
 
 	~Fixed();
 
