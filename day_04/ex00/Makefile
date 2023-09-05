@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+         #
+#    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/28 13:20:40 by yrhiba            #+#    #+#              #
-#    Updated: 2023/08/29 13:08:06 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/09/05 18:17:31 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,11 +27,11 @@ FLAGS = -Wall -Wextra -Werror
 STD = -std=c++98
 
 $(NAME) : $(OBJS)
-	g++ $(STD) $(FLAGS) $(OBJS) -o $(NAME)
+	c++ $(STD) $(FLAGS) $(OBJS) -o $(NAME)
 
 $(ODIR)%.o : %.cpp $(INCS)
 	@mkdir -p $(dir $@)
-	g++ $(STD) $(FLAGS) -c $< -o $@
+	c++ $(STD) $(FLAGS) -c $< -o $@
 
 all : $(NAME)
 

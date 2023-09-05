@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+         #
+#    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/30 16:02:22 by yrhiba            #+#    #+#              #
-#    Updated: 2023/08/30 16:19:13 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/09/05 18:17:31 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,11 +23,11 @@ ODIR = objs/
 OBJS = $(addprefix $(ODIR), $(SRCS:.cpp=.o))
 
 $(NAME) : $(OBJS)
-	g++ $(FLAGS) $(OBJS) -o $(NAME)
+	c++ $(FLAGS) $(OBJS) -o $(NAME)
 
 $(ODIR)%.o : %.cpp $(INCS)
 	@mkdir -p $(dir $@)
-	g++ $(FLAGS) -c $< -o $@
+	c++ $(FLAGS) -c $< -o $@
 
 all : $(NAME)
 
