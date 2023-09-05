@@ -3,29 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:21:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/21 01:07:03 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/05 18:11:09 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-using namespace std;
-
 int main( void )
 {
-	float x, y; cin >> x >> y;
+	float x, y;
+
+	std::cin >> x >> y;
 
 	Fixed a(x);
 	Fixed b(y);
 
 
-	cout << a << "  " << b << endl;
+	std::cout << a << "  " << b << std::endl;
 
 
-	cout << --a << endl;
-	cout << ++b << endl;
+	std::cout << --a << std::endl;
+	std::cout << ++b << std::endl;
 	return 0;
 }
