@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 00:22:24 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/21 01:20:23 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/05 10:17:23 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define __FIXED__
 
 #include <iostream>
-#include <vector>
 #include <cmath>
 
 class Fixed
