@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/22 23:19:45 by yrhiba            #+#    #+#              #
-#    Updated: 2023/06/23 02:45:21 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/09/05 18:19:24 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,11 +23,11 @@ DOBJS = objs/
 OBJS = $(addprefix $(DOBJS), $(SRCS:.cpp=.o))
 
 $(NAME) : $(OBJS)
-	g++ $(FLAGS) $(OBJS) -o $(NAME)
+	c++ $(FLAGS) $(OBJS) -o $(NAME)
 
 $(DOBJS)%.o : %.cpp $(INCS)
 	@mkdir -p $(dir $@)
-	g++ $(FLAGS) -c $< -o $@ -I . -I incs
+	c++ $(FLAGS) -c $< -o $@ -I . -I incs
 
 all : $(NAME)
 
