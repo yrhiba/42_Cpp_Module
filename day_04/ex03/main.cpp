@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 16:07:34 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/30 17:50:28 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/06 14:38:27 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int main()
 {
-	std::cout << "Hello, world!" << std::endl;
+	std::cout << "~Program Start" << std::endl;
 	return (0);
 }
