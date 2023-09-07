@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.hpp                                         :+:      :+:    :+:   */
+/*   Ice.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/30 16:08:30 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/07 13:14:07 by yrhiba           ###   ########.fr       */
+/*   Created: 2023/09/07 12:49:31 by yrhiba            #+#    #+#             */
+/*   Updated: 2023/09/07 13:12:29 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER
-# define HEADER
+#ifndef ICE
+# define ICE
 
-/* system includes */
-#include <iostream>
-#include <string>
+#include "header.hpp"
 
-/* local includes */
-#include "ICharacter.hpp"
-#include "AMateria.hpp"
+class Ice : public AMateria
+{
+public:
+	Ice();
+	Ice(const Ice &other);
+	Ice &operator=(const Ice &other);
+	~Ice();
 
-#include "Ice.hpp"
-#include "Cure.hpp"
+	AMateria *clone() const;
+};
 
 #endif

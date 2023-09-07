@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.hpp                                         :+:      :+:    :+:   */
+/*   Ice.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/30 16:08:30 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/07 13:14:07 by yrhiba           ###   ########.fr       */
+/*   Created: 2023/09/07 13:07:04 by yrhiba            #+#    #+#             */
+/*   Updated: 2023/09/07 13:12:28 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER
-# define HEADER
+#include "header.hpp"
 
-/* system includes */
-#include <iostream>
-#include <string>
+Ice::Ice()
+{
+	this->_type = "ice";
+}
 
-/* local includes */
-#include "ICharacter.hpp"
-#include "AMateria.hpp"
+Ice::Ice(const Ice &other)
+{
+}
 
-#include "Ice.hpp"
-#include "Cure.hpp"
+Ice &Ice::operator=(const Ice &other)
+{
+}
 
-#endif
+Ice::~Ice()
+{
+}
+
+AMateria *Ice::clone() const
+{
+	return (new Ice());
+}

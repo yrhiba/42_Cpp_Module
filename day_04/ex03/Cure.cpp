@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   header.hpp                                         :+:      :+:    :+:   */
+/*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/30 16:08:30 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/07 13:14:07 by yrhiba           ###   ########.fr       */
+/*   Created: 2023/09/07 13:07:04 by yrhiba            #+#    #+#             */
+/*   Updated: 2023/09/07 13:15:54 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER
-# define HEADER
+#include "header.hpp"
 
-/* system includes */
-#include <iostream>
-#include <string>
+Cure::Cure()
+{
+	this->_type = "cure";
+}
 
-/* local includes */
-#include "ICharacter.hpp"
-#include "AMateria.hpp"
+Cure::Cure(const Cure &other)
+{
+}
 
-#include "Ice.hpp"
-#include "Cure.hpp"
+Cure &Cure::operator=(const Cure &other)
+{
+}
 
-#endif
+Cure::~Cure()
+{
+}
+
+AMateria *Cure::clone() const
+{
+	return (new Cure());
+}
