@@ -6,14 +6,15 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 12:49:31 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 17:51:38 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:29:18 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CURE
-# define CURE
+#ifndef _CURE
+# define _CURE
 
-#include "header.hpp"
+#include "AMateria.hpp"
+#include "Character.hpp"
 
 class Cure : public AMateria
 {

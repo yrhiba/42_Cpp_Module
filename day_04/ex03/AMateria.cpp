@@ -6,11 +6,11 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 14:23:20 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/07 13:22:39 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:32:51 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "AMateria.hpp"
 
 /* canolical methodes */
 
@@ -26,6 +26,8 @@ AMateria::AMateria(const AMateria &other) : _type(other._type)
 AMateria &AMateria::operator=(const AMateria &other)
 {
 	// nothing to do
+	(void)other;
+	return (*this);
 }
 
 
@@ -47,4 +49,5 @@ std::string const & AMateria::getType() const
 
 void AMateria::use(ICharacter& target)
 {
+	std::cout << "AMateria Use Called with : " << target << std::endl;
 }

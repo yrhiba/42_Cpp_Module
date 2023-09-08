@@ -6,14 +6,16 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 14:18:37 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 17:56:17 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:30:11 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef _ICHARCH
 # define _ICHARCH
 
-# include "header.hpp"
+#include "AMateria.hpp"
+
+class AMateria;
 
 class ICharacter
 {

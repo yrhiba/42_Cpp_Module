@@ -6,14 +6,17 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 01:06:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 20:15:44 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:24:08 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef _CHARACTER
 # define _CHARACTER
 
-#include "header.hpp"
+#include <iostream>
+#include <string>
+#include "ICharacter.hpp"
+#include "AMateria.hpp"
 
 class Character : public ICharacter
 {

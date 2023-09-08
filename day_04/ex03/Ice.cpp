@@ -6,11 +6,11 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 13:07:04 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 17:59:55 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:35:05 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "Ice.hpp"
 
 Ice::Ice()
 {
@@ -19,10 +19,13 @@ Ice::Ice()
 
 Ice::Ice(const Ice &other)
 {
+	(void)other;
 }
 
 Ice &Ice::operator=(const Ice &other)
 {
+	(void)other;
+	return (*this);
 }
 
 Ice::~Ice()

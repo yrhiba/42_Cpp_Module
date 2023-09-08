@@ -6,11 +6,11 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 13:07:04 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 17:56:22 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:34:29 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "Cure.hpp"
 
 Cure::Cure()
 {
@@ -19,10 +19,13 @@ Cure::Cure()
 
 Cure::Cure(const Cure &other)
 {
+	(void)other;
 }
 
 Cure &Cure::operator=(const Cure &other)
 {
+	(void)other;
+	return (*this);
 }
 
 Cure::~Cure()

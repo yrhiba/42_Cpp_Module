@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/30 16:02:22 by yrhiba            #+#    #+#              #
-#    Updated: 2023/09/08 16:44:41 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/09/08 20:26:22 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,7 @@ SRCS =	main.cpp AMateria.cpp \
 		Cure.cpp Ice.cpp \
 		Character.cpp
 
-INCS =	header.hpp \
-		AMateria.hpp \
+INCS =	AMateria.hpp \
 		Cure.hpp Ice.hpp \
 		ICharacter.hpp Character.hpp
 

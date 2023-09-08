@@ -6,11 +6,11 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 16:38:16 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 19:52:09 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:36:15 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "Character.hpp"
 
 Character::Character() : name("no-name")
 {
@@ -51,6 +51,7 @@ Character &Character::operator=(const Character &other)
 
 		this->inventory[i] = other.inventory[i]->clone();
 	}
+	return (*this);
 }
 
 Character::Character(const std::string &_name) : name(_name)
@@ -112,7 +113,7 @@ AMateria *Character::getMateria(int idx)
 	return (this->inventory[idx]);
 }
 
-ostream &operator<<(ostream &stream, const ICharacter &character)
+std::ostream &operator<<(std::ostream &stream, const ICharacter &character)
 {
 	// ostream opearator overlod
 	stream << character.getName();
