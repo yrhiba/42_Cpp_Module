@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 01:06:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 19:53:02 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 20:15:44 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,6 @@ public:
 	AMateria *getMateria(int idx);
 };
 
-ostream &operator<<(ostream &stream, const ICharacter &character);
+std::ostream &operator<<(std::ostream &stream, const ICharacter &character);
 
 #endif
