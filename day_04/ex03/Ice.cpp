@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 13:07:04 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/07 13:12:28 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 17:59:55 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,9 @@ Ice::~Ice()
 AMateria *Ice::clone() const
 {
 	return (new Ice());
+}
+
+void Ice::use(ICharacter& target)
+{
+	std::cout << "* shoots an ice bolt at " << target << " *" << std::endl;
 }
