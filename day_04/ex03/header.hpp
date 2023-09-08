@@ -6,12 +6,12 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 16:08:30 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 16:55:05 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 19:56:45 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _HEADER
-# define _HEADER
+#ifndef _HEADER_
+# define _HEADER_
 
 /* system includes */
 #include <iostream>
