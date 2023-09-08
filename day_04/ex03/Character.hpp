@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 01:06:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 20:24:08 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 22:03:10 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ public:
 
 	// i guess need to have this
 	AMateria *getMateria(int idx);
+	bool isInventoryFull() const;
 };
 
 std::ostream &operator<<(std::ostream &stream, const ICharacter &character);

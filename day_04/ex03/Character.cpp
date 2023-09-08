@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 16:38:16 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 20:36:15 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 22:15:36 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void Character::equip(AMateria* m)
 {
 	for (int i = 0; i < 4; i++)
 	{
-		if (this->inventory[i] != nullptr)
+		if (this->inventory[i] == nullptr)
 		{
 			this->inventory[i] = m;
 			return ;
@@ -93,14 +93,14 @@ void Character::equip(AMateria* m)
 
 void Character::unequip(int idx)
 {
-	if (this->inventory[idx] == nullptr || idx < 0 || idx >= 4)
+	if (idx < 0 || idx >= 4)
 		return ;
 	this->inventory[idx] = nullptr;
 }
 
 void Character::use(int idx, ICharacter& target)
 {
-	if (this->inventory[idx] == nullptr || idx < 0 || idx >= 4)
+	if (idx < 0 || idx >= 4 || this->inventory[idx] == nullptr)
 		return ;
 	this->inventory[idx]->use(target);
 }
@@ -111,6 +111,16 @@ AMateria *Character::getMateria(int idx)
 	if (idx >= 4 || idx < 0)
 		return (nullptr);
 	return (this->inventory[idx]);
+}
+
+bool Character::isInventoryFull() const
+{
+	for (int i = 0; i < 4; i++)
+	{
+		if (this->inventory[i] == nullptr)
+			return (false);
+	}
+	return (true);
 }
 
 std::ostream &operator<<(std::ostream &stream, const ICharacter &character)
