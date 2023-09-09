@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/30 16:02:22 by yrhiba            #+#    #+#              #
-#    Updated: 2023/09/08 20:26:22 by yrhiba           ###   ########.fr        #
+#    Updated: 2023/09/08 22:39:52 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,13 @@ NAME = ex03
 
 SRCS =	main.cpp AMateria.cpp \
 		Cure.cpp Ice.cpp \
-		Character.cpp
+		Character.cpp \
+		MateriaSource.cpp
 
 INCS =	AMateria.hpp \
 		Cure.hpp Ice.hpp \
-		ICharacter.hpp Character.hpp
+		ICharacter.hpp Character.hpp \
+		IMateriaSource.hpp MateriaSource.hpp
 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 
