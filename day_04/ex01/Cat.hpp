@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yrhiba <yrhiba@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:02:16 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/08/29 12:28:37 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/09 04:43:03 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ private:
 public:
 	Cat();
 	Cat(const Cat &other);
-	~Cat();
+	virtual ~Cat();
 	Cat &operator=(const Cat &other);
 	void makeSound( void ) const;
 };
