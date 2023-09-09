@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 16:38:16 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/08 22:15:36 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/08 22:44:32 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,15 @@ std::string const & Character::getName() const
 
 void Character::equip(AMateria* m)
 {
+	if (m == nullptr)
+		return ;
+
+	for (int i = 0; i < 4; i++)
+	{
+		if (this->inventory[i] == m)
+			return ;
+	}
+
 	for (int i = 0; i < 4; i++)
 	{
 		if (this->inventory[i] == nullptr)
