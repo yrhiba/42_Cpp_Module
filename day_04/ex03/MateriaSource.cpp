@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 22:39:25 by yrhiba            #+#    #+#             */
-/*   Updated: 2023/09/09 04:01:22 by yrhiba           ###   ########.fr       */
+/*   Updated: 2023/09/09 04:19:28 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ MateriaSource::~MateriaSource()
 {
 	for (int i = 0; i < 4; i++)
 	{
-		if (this->inventory[i] == nullptr) continue;
-		delete this->inventory[i];
+		if ((this->inventory)[i] != nullptr)
+			delete inventory[i];
 	}
 	delete[] this->inventory;
 }
@@ -73,8 +73,11 @@ void MateriaSource::learnMateria(AMateria *materia)
 
 	for (int i = 0; i < 4; i++)
 	{
-		if (this->inventory[i] != nullptr)
+		if (this->inventory[i] == nullptr)
+		{
 			this->inventory[i] = materia;
+			return ;
+		}
 	}
 }
 
