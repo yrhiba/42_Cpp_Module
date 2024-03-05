@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:25:58 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 00:07:27 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 00:11:22 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,7 @@ public:
 	void upgrade( void );
 	void degrade( void );
 };
+
+std::ostream &operator<<(std::ostream &os, const Bureaucrat &b);
 
 #endif

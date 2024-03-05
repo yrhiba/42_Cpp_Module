@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 23:01:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 00:07:22 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 00:11:26 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,12 @@ const char* Bureaucrat::GradeTooLowException::what() const throw()
 
 Bureaucrat::GradeTooLowException::~GradeTooLowException() throw()
 {
+}
+
+/* Operator << overload */
+
+std::ostream &operator<<(std::ostream &os, const Bureaucrat &b)
+{
+	os << b.getName() << ", bureaucrat grade " << b.getGrade() << ".";
+	return (os);
 }
