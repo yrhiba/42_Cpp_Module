@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 19:52:58 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 20:52:14 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 22:36:10 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define FORM
 
 # include "Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class Form
 {

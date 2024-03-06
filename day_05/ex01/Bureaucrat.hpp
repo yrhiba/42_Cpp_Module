@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:25:58 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 20:14:47 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 22:36:34 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 #include <iomanip>
 #include <exception>
 #include <string>
+//
+#include "Form.hpp"
+
+class Form;
 
 class Bureaucrat
 {
@@ -50,6 +54,8 @@ public:
 
 	void upgrade( void );
 	void degrade( void );
+
+	void signForm(Form &form) const;
 
 	static const int highestGrade = 1;
 	static const int lowestGrade = 150;

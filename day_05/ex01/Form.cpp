@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 20:03:43 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 22:28:09 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 22:38:29 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,6 @@ std::ostream &operator<<(std::ostream &os, const Form &form)
 {
 	os << form.getName() << " Signed: " << (form.getIsSigned()?"yes":"no");
 	os << ", Required Grades: sign(" << form.getRequireGradeToSign() << "), exec(";
-	os << form.getRequireGradeToExec() << ")." << std::endl;
+	os << form.getRequireGradeToExec() << ").";
 	return (os);
 }
