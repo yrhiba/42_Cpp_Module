@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:27:15 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 00:11:56 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 19:51:21 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-	Bureaucrat a("A", 1);
+	Bureaucrat a("A", 156);
 	std::cout << a << std::endl;
 	return (0);
 }

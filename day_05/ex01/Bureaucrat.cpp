@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 23:01:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 00:11:26 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 19:52:14 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ Bureaucrat::Bureaucrat()
 void Bureaucrat::checkGrade( void )
 {
 	if (this->grade < this->highestGrade)
-		throw Bureaucrat::GradeTooHighException("Grade Too High");
+		throw Bureaucrat::GradeTooHighException();
 
 	if (this->grade > this->lowestGrade)
-		throw Bureaucrat::GradeTooLowException("Grade Too Low");
+		throw Bureaucrat::GradeTooLowException();
 }
 
 Bureaucrat::Bureaucrat(std::string _name, int _grade)
@@ -69,39 +69,15 @@ void Bureaucrat::degrade( void )
 	this->checkGrade();
 }
 
-// ########## //
-// EXCEPTIONS //
-// ########## //
-
-Bureaucrat::GradeTooHighException::GradeTooHighException(std::string _msg) throw()
-: msg(_msg)
-{
-}
-
 const char* Bureaucrat::GradeTooHighException::what() const throw()
 {
-	return this->msg.c_str();
-}
-
-Bureaucrat::GradeTooHighException::~GradeTooHighException() throw()
-{
-}
-
-Bureaucrat::GradeTooLowException::GradeTooLowException(std::string _msg) throw()
-: msg(_msg)
-{
+	return "grade too high";
 }
 
 const char* Bureaucrat::GradeTooLowException::what() const throw()
 {
-	return this->msg.c_str();
+	return "grade too tow";
 }
-
-Bureaucrat::GradeTooLowException::~GradeTooLowException() throw()
-{
-}
-
-/* Operator << overload */
 
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &b)
 {
