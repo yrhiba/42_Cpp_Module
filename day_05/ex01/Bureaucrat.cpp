@@ -6,23 +6,23 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 23:01:27 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/06 19:52:14 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/06 20:14:35 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Bureaucrat.hpp"
 
 Bureaucrat::Bureaucrat()
-: name("unknown"), grade(this->lowestGrade)
+: name("unknown"), grade(Bureaucrat::lowestGrade)
 {
 }
 
 void Bureaucrat::checkGrade( void )
 {
-	if (this->grade < this->highestGrade)
+	if (this->grade < Bureaucrat::highestGrade)
 		throw Bureaucrat::GradeTooHighException();
 
-	if (this->grade > this->lowestGrade)
+	if (this->grade > Bureaucrat::lowestGrade)
 		throw Bureaucrat::GradeTooLowException();
 }
 

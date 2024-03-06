@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/05 23:01:48 by yrhiba            #+#    #+#              #
-#    Updated: 2024/03/05 23:02:37 by yrhiba           ###   ########.fr        #
+#    Updated: 2024/03/06 20:53:22 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,9 @@
 
 NAME = run
 
-SRCS = main.cpp Bureaucrat.cpp
+SRCS = main.cpp Bureaucrat.cpp Form.cpp
 
-INCS = Bureaucrat.hpp
+INCS = Bureaucrat.hpp Form.hpp
 
 ODIR = objs/
 
