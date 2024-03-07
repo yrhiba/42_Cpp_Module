@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 16:59:36 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 20:20:33 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:18:32 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ public:
 	ShrubberyCreationForm &operator=(const ShrubberyCreationForm &other);
 	~ShrubberyCreationForm();
 	//
-	void execute(Bureaucrat const &executor);
+	void execute(Bureaucrat const &executor) const;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 21:41:36 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 22:00:45 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:18:13 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ public:
 	RobotomyRequestForm &operator=(const RobotomyRequestForm &other);
 	~RobotomyRequestForm();
 	//
-	void execute(Bureaucrat const &executor);
+	void execute(Bureaucrat const &executor) const;
 };
 
 #endif

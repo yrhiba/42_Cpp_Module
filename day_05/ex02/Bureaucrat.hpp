@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:25:58 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 16:34:47 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:21:09 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ public:
 	void degrade( void );
 
 	void signForm(AForm &form) const;
+	void executeForm(AForm const &form) const;
 
 	static const int highestGrade = 1;
 	static const int lowestGrade = 150;

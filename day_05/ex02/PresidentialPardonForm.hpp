@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 22:07:05 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 22:11:09 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:17:46 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ public:
 	PresidentialPardonForm &operator=(const PresidentialPardonForm &other);
 	~PresidentialPardonForm();
 	//
-	void execute(Bureaucrat const &executor);
+	void execute(Bureaucrat const &executor) const;
 };
 
 #endif

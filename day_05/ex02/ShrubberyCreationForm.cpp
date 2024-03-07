@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 17:03:38 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 21:57:55 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:18:27 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 {
 }
 
-void ShrubberyCreationForm::execute(Bureaucrat const &executor)
+void ShrubberyCreationForm::execute(Bureaucrat const &executor) const
 {
 	if (executor.getGrade() > this->getRequireGradeToExec())
 		throw ShrubberyCreationForm::GradeTooLowException();

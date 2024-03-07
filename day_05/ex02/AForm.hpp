@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 19:52:58 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 21:22:26 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:17:21 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ public:
 	//
 	void beSigned(const Bureaucrat &bureaucrat);
 	//
-	virtual void execute(Bureaucrat const & executor) = 0;
+	virtual void execute(Bureaucrat const & executor) const = 0;
 };
 
 std::ostream &operator<<(std::ostream &os, const AForm &Aform);

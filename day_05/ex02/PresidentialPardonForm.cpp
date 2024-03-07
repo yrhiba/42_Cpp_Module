@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 22:07:07 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 22:10:45 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 22:17:53 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ PresidentialPardonForm::~PresidentialPardonForm()
 {
 }
 
-void PresidentialPardonForm::execute(Bureaucrat const &executor)
+void PresidentialPardonForm::execute(Bureaucrat const &executor) const
 {
 	if (executor.getGrade() > this->getRequireGradeToExec())
 		throw PresidentialPardonForm::GradeTooLowException();
