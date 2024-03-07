@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 19:52:58 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 16:08:32 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 16:58:44 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ public:
 	int getRequireGradeToExec(void) const;
 	//
 	void beSigned(const Bureaucrat &bureaucrat);
+	//
+	virtual void execute(Bureaucrat const & executor) = 0;
 };
 
 std::ostream &operator<<(std::ostream &os, const AForm &Aform);
