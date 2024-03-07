@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/05 23:01:48 by yrhiba            #+#    #+#              #
-#    Updated: 2024/03/07 16:16:01 by yrhiba           ###   ########.fr        #
+#    Updated: 2024/03/07 21:32:19 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,14 @@
 
 NAME = run
 
-SRCS = main.cpp Bureaucrat.cpp AForm.cpp
+SRCS =	main.cpp \
+		Bureaucrat.cpp \
+		AForm.cpp \
+		ShrubberyCreationForm.cpp
 
-INCS = Bureaucrat.hpp AForm.hpp
+INCS =	Bureaucrat.hpp \
+		AForm.hpp \
+		ShrubberyCreationForm.hpp
 
 ODIR = objs/
 
