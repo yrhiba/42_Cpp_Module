@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 20:03:43 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 16:10:54 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/07 20:00:24 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,11 @@ const char* AForm::GradeTooHighException::what() const throw()
 const char* AForm::GradeTooLowException::what() const throw()
 {
 	return "grade too tow";
+}
+
+const char* AForm::SignException::what() const throw()
+{
+	return "form not signed";
 }
 
 std::ostream &operator<<(std::ostream &os, const AForm &form)
