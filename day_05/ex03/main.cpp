@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:27:15 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/07 22:27:08 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/08 18:39:20 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,32 +15,26 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 int main()
 {
 	srand(time(0));
 
-	Bureaucrat a("A-Beraucrat", 1);
+	Bureaucrat	bureaucrat("bureaucrat", 1);
+	Intern		someRandomIntern;
 
-	AForm *form = new ShrubberyCreationForm("yahya");
-	AForm *form2 = new RobotomyRequestForm("ziko");
-	AForm *form3 = new PresidentialPardonForm("aloene");
+	AForm* rrf = someRandomIntern.makeForm("shrubbery creation", "Bender");
 
-	// a.signForm(*form);
-	// a.signForm(*form2);
-	// a.signForm(*form3);
+	if (rrf)
+	{
+		bureaucrat.signForm(*rrf);
+		bureaucrat.executeForm(*rrf);
 
-	a.executeForm(*form);
-	a.executeForm(*form2);
-	a.executeForm(*form3);
+		std::cout << *rrf << std::endl;
 
-	std::cout << *form << std::endl;
-	std::cout << *form2 << std::endl;
-	std::cout << *form3 << std::endl;
-
-	delete form;
-	delete form2;
-	delete form3;
-
+		delete rrf;
+	}
+	//
 	return (0);
 }
