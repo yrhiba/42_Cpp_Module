@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 21:48:17 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/11 22:39:25 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/11 22:51:56 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,12 @@ public:
 	}
 
 	T &operator[](size_t idx)
+	{
+		if (idx >= this->_n) throw Array::OutOfRangeException("out of range.");
+		return this->arr[idx];
+	}
+
+	const T &operator[](size_t idx) const
 	{
 		if (idx >= this->_n) throw Array::OutOfRangeException("out of range.");
 		return this->arr[idx];

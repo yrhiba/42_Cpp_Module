@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 21:47:33 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/11 22:40:24 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/11 22:51:57 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # include "Array.hpp"
 
 # define N 10
+
+# define ui size_t
 
 int main()
 {
