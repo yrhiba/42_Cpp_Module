@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 23:54:22 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/11 01:15:51 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/11 02:32:38 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void ScalarConverter::convert_to_char(const std::string &to_convert)
 	}
 	//
 	if (!can) std::cout << "impossible";
-	else std::cout << "'" << (char)int_value << "'";
+	else std::cout << "'" <<  static_cast<char>(int_value) << "'";
 	//
 	std::cout << std::endl;
 }
@@ -88,7 +88,7 @@ void ScalarConverter::convert_to_float(const std::string &to_convert)
 	try
 	{
 		float_value = std::stof(to_convert);
-		std::cout <<  float_value << "f";
+		std::cout << float_value << "f";
 	}
 	catch(...)
 	{
@@ -123,7 +123,7 @@ void ScalarConverter::convert(std::string to_convert)
 		&& to_convert[0] == to_convert[2]
 		&& to_convert[0] == '\'')
 	{
-		to_convert = std::to_string((int)to_convert[1]);
+		to_convert = std::to_string(static_cast<int>(to_convert[1]));
 	}
 	ScalarConverter::convert_to_char(to_convert);
 	ScalarConverter::convert_to_int(to_convert);

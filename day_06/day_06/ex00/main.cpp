@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 23:46:07 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/11 01:26:15 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/11 02:33:22 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(int ac, char **av)
 	//
 	std::cout << std::fixed << std::setprecision(1);
 	//
-	for (int i = 1; i < ac; i++) convert(av[i]);
+	for (int i = 1; i < ac; i++) convert(static_cast<std::string>(av[i]));
 	//
 	return (0);
 }
