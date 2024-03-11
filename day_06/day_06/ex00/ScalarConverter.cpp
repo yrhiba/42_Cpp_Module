@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 23:54:22 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/11 02:32:38 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/11 03:22:32 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ ScalarConverter::ScalarConverter()
 
 ScalarConverter::ScalarConverter(const ScalarConverter &other)
 {
-	(void)other;
+	static_cast<void>(other);
 }
 
 ScalarConverter &ScalarConverter::operator=(const ScalarConverter &other)
 {
-	(void)other;
+	static_cast<void>(other);
 	return (*this);
 }
 
