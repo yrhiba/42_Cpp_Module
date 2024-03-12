@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 21:48:17 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/11 22:51:56 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/12 01:04:39 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ private:
 	};
 
 public:
-	Array() : _n(0), arr(nullptr)
+	Array() : _n(0), arr(NULL)
 	{
 	}
 
@@ -43,7 +43,7 @@ public:
 		for (size_t i = 0; i < this->_n; i++) this->arr[i] = T();
 	}
 
-	Array(const Array &other) : _n(0), arr(nullptr)
+	Array(const Array &other) : _n(0), arr(NULL)
 	{
 		*this = other;
 	}
