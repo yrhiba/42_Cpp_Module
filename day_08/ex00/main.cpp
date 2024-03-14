@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 01:23:40 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/14 01:32:40 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/14 02:29:40 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # include <vector>
 # include <algorithm>
 # include "easyfind.hpp"
-
 
 int main()
 {
