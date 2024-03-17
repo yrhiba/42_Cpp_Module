@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:36:23 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/17 08:34:13 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/17 08:37:42 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ std::vector< std::vector<double> >
 read_data(std::string file_path = DATABASE_PATH, char delim = ',')
 {
 	std::vector< std::vector<double> > data;
-	std::ifstream fin (file_path);
+	std::ifstream fin (file_path.c_str());
 	//
 	if (fin.fail()) throw ErrorExp(file_path + " " + read_data_err[3]);
 	//
