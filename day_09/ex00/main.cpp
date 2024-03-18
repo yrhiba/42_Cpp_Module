@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:36:23 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/17 08:37:42 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/18 00:48:10 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ bool isValidDate(int y, int m, int d)
 std::vector< std::vector<double> >
 read_data(std::string file_path = DATABASE_PATH, char delim = ',')
 {
+	std::map<int, double> mp;
+
 	std::vector< std::vector<double> > data;
 	std::ifstream fin (file_path.c_str());
 	//

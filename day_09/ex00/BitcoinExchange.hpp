@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:43:09 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/17 08:18:53 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/18 00:47:19 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <iostream>
 # include <string>
 # include <vector>
+# include <map>
 # include <algorithm>
 # include <fstream>
 # include <exception>
