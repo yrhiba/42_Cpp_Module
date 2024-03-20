@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:36:23 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/20 03:07:15 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/20 03:13:58 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,8 +144,8 @@ read_data(std::string file_path = DATABASE_PATH, char delim = ',')
 		}
 		std::stringstream ss(exchange_rate);
 		ss >> data.back()[3];
-		//
-		if (data.back()[3] < 0 || data.back()[3] > 1000)
+		// only for input check for exchange rate value
+		if ((delim != ',') && (data.back()[3] < 0 || data.back()[3] > 1000))
 		{
 			data.back()[4] = 2;
 			continue;
@@ -181,6 +181,7 @@ int main(int ac, char **av)
 	{
 		if (db[i].back())
 		{
+			std::cout << "Row [" << i+1 << "] : ";
 			std::cout << "Data-Base-Error: " << read_data_err[static_cast<int>(db[i].back())] << std::endl;
 			return (0);
 		}

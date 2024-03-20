@@ -6,14 +6,14 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:43:09 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/20 02:53:42 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/20 03:09:11 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BITCOINEXCHANGE
 # define BITCOINEXCHANGE
 
-# define DATABASE_PATH "./data.csv"
+# define DATABASE_PATH "./cpp_09/data.csv"
 
 # include <iostream>
 # include <string>
