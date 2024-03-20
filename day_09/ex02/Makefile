@@ -25,7 +25,7 @@ OBJS = $(addprefix $(ODIR), $(SRCS:.cpp=.o))
 
 CC = c++
 
-FLAGS = -Wall -Wextra -std=c++98 #-Werror #-fsanitize=address -g
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
 $(NAME) : $(OBJS)
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME)
