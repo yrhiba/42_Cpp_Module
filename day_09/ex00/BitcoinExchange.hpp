@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:43:09 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/18 00:47:19 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/20 02:53:42 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 # include <cstdlib>
 # include <ctime>
 
-class ErrorExp : std::exception
+class ErrorExp : public std::exception
 {
 private:
 	std::string msg;
@@ -48,7 +48,8 @@ std::string read_data_err[] =
 	"invalid date", // 1
 	"invalid exchange rate", // 2
 	"reading file fail", // 3
-	"invalid line syntax" // 4
+	"invalid line syntax", // 4
+	"db: can't find suitable date", // 5
 };
 
 int	month_days[] = 
@@ -67,36 +68,4 @@ int	month_days[] =
 	31 // month 12
 };
 
-bool	isLeapYear(int);
-
 #endif
-
-/*
-bool validDates(vvd &data)
-{
-	std::time_t currentTime = std::time(NULL);
-	std::tm* currentLocalTime = std::localtime(&currentTime);
-	int year = currentLocalTime->tm_year + 1900;
-	int month = currentLocalTime->tm_mon + 1;
-	int day = currentLocalTime->tm_mday;
-	//
-	for (size_t i = 0; i < data.size(); i++)
-	{
-		int cyear = data[i][0];
-		int cmonth = data[i][1];
-		int cday = data[i][2];
-		//
-		if (cyear > year) return (false);
-		else if (cyear == year)
-		{
-			if (cmonth > month) return (false);
-			else if ((cmonth == month) && (cday > day)) return (false);
-		}
-		//
-		if (cmonth < 1 || cmonth > 12) return (false);
-		if (cday < 1 || cday > month_days[cmonth]) return (false);
-		if (!isLeapYear(cyear) && cmonth == 2 && cday == 29) return (false);
-	}
-	return (true);
-}
-*/

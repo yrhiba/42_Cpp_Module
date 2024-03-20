@@ -6,7 +6,7 @@
 #    By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/17 01:10:03 by yrhiba            #+#    #+#              #
-#    Updated: 2024/03/17 01:12:12 by yrhiba           ###   ########.fr        #
+#    Updated: 2024/03/20 03:07:29 by yrhiba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OBJS = $(addprefix $(ODIR), $(SRCS:.cpp=.o))
 
 CC = c++
 
-FLAGS = -Wall -Wextra #-Werror -std=c++98 -fsanitize=address -g
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
 $(NAME) : $(OBJS)
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME)
