@@ -62,35 +62,46 @@ int main(int ac, char **av)
 		b.push_back(t);
 	}
 	//
-	cout << "Init: ";
+	cerr << "Init: ";
 	for (list<int>::iterator it = a.begin(); it != a.end(); it++)
 	{
-		cout << *it << " ";
+		cerr << *it << " ";
 	}
-	cout << endl;
+	cerr << endl;
 	//
 	merge_sort(a);
 	merge_sort(b);
 	//
-	cout << "Result List: ";
+	cerr << "Result List: ";
 	for (list<int>::iterator it = a.begin(); it != a.end(); it++)
 	{
-		cout << *it << " ";
+		cerr << *it << " ";
 	}
-	cout << endl;
+	cerr << endl;
 	//
-	cout << "Result Deque: ";
+	cerr << "Result Deque: ";
 	for (deque<int>::iterator it = b.begin(); it != b.end(); it++)
 	{
-		cout << *it << " ";
+		cerr << *it << " ";
 	}
-	cout << endl;
+	cerr << endl;
 	//
 
-	list<int>::iterator i = a.begin();
-	advance(i, 1);
-	cout << *i << endl;
+	list<int>::iterator i;
+	i = lower_bound(a.begin(), a.end(), 10);
+	if (i != a.end()) cerr << *i << endl;
+	else cerr << "Not Found\n";
+	
+	deque<int>::iterator j;
+	j = lower_bound(b.begin(), b.end(), 10);
+	if (j != b.end()) cerr << *j << endl;
+	else cerr << "Not Found\n";
+
+	if (i != a.begin()) i--;
+	if (j != b.begin()) j--;
+
+	cerr << *i << "\n";
+	cerr << *j << "\n";
 	//
 	return (0);
 }
-
