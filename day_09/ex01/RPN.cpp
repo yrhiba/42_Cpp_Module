@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 04:45:06 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/20 05:28:13 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/21 21:16:54 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void err(std::string msg)
 
 double pop(std::stack<double> &st)
 {
-	int v = st.top();
+	double v = st.top();
 	st.pop();
 	return v;
 }

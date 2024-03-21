@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 00:36:23 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/20 03:13:58 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/21 21:16:22 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -244,7 +244,7 @@ int main(int ac, char **av)
 			else
 			{
 				for (size_t j = 0; j < 3; j++) std::cout << std::setw(2) << std::setfill('0') << querys[i][j] << "- "[j+1 == 3];
-				std::cout << "=> " << cur_exchange_rate * ans;
+				std::cout << "=> " << std::fixed << std::setprecision(2) << cur_exchange_rate * ans;
 			}
 		}
 		//

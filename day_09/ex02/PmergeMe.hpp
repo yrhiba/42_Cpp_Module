@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 10:54:49 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/20 18:02:23 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/21 21:21:51 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,8 @@
 # include <ctime>
 # include <unistd.h>
 
-class PmergeMe
+namespace PmergeMe
 {
-private:
-	PmergeMe() {};
-	//
 	template<typename T>
 	static void merge_sort(T &a)
 	{
@@ -72,7 +69,6 @@ private:
 		return a;
 	}
 
-public:
 	template<typename T, typename C>
 	static void sort(T &c)
 	{

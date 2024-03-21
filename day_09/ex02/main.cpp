@@ -6,7 +6,7 @@
 /*   By: yrhiba <yrhiba@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 10:53:56 by yrhiba            #+#    #+#             */
-/*   Updated: 2024/03/20 18:02:43 by yrhiba           ###   ########.fr       */
+/*   Updated: 2024/03/21 21:34:39 by yrhiba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ int main(int ac, char **av)
 	//
 	std::cout << "Before: ";
 	for (std::list<int>::iterator it = list.begin(); it != list.end(); it++) std::cout << *it << " ";
+	if (list.empty()) std::cout << "(empty)";
 	std::cout << std::endl;
 	// time vars
 	struct timeval start_list, end_list, start_deque, end_deque;
@@ -65,9 +66,7 @@ int main(int ac, char **av)
 	//
 	std::cout << "After: ";
 	for (std::list<int>::iterator it = list.begin(); it != list.end(); it++) std::cout << *it << " ";
-	std::cout << std::endl;
-	std::cout << "After: ";
-	for (std::deque<int>::iterator it = deque.begin(); it != deque.end(); it++) std::cout << *it << " ";
+	if (list.empty()) std::cout << "(empty)";
 	std::cout << std::endl;
 	//
 	std::cout << "Time to process a range of " << list.size() << " elements with std::list : ";
